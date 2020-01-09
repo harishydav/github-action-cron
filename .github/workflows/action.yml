@@ -1,7 +1,6 @@
 name: 'GitHub Actions CURL Cron'
 
 on:
-  push:
   schedule:
     - cron: '*/2 * * * *'
 
@@ -9,6 +8,5 @@ jobs:
   bot:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
       - name: 'Curl the api'
         run: curl https://jsonplaceholder.typicode.com/todos/1
