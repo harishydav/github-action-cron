@@ -1,6 +1,7 @@
 name: 'GitHub Actions Every 10 Minutes for herokuapp'
 
 on:
+  push:
   schedule:
     - cron: '*/10 * * * *'
 
