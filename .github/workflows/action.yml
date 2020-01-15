@@ -1,12 +1,12 @@
-name: 'GitHub Actions Every 2 Minutes'
+name: 'GitHub Actions Every 10 Minutes for herokuapp'
 
 on:
   schedule:
-    - cron: '*/2 * * * *'
+    - cron: '*/10 * * * *'
 
 jobs:
   bot:
     runs-on: ubuntu-latest
     steps:
       - name: 'Curl the api'
-        run: curl https://jsonplaceholder.typicode.com/todos/1
+        run: curl algoload.herokuapp.com/
